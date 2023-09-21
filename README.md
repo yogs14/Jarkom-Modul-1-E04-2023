@@ -81,7 +81,8 @@ Wireshark
    nc 10.21.78.111 6565 <br>
    Solving : <br>
    Masuk ke dalam packet capture. Karena soal menanyakan tentang jumlah packet yang menuju IP 184.87.193.88, maka kita dapat menerapkan filter "ip.dst == 184.87.193.88"
-   ![7 2](https://github.com/nabielvna/desktop-tutorial/assets/102472111/f8de0ce4-a8aa-40ca-858d-64211f4ff5a9)
+   ![7 2](https://github.com/yogs14/Jarkom-jarkoman/assets/102472111/6616db01-4bbd-480c-8d02-b1fc731c9086)
+
    
    kemudian didapatkan jumlah packet yang menuju IP 184.87.193.88 sebanyak 6 packet
    ![7 3](https://github.com/nabielvna/desktop-tutorial/assets/102472111/45449545-703d-4dcb-960f-521a34f173d6)
