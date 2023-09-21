@@ -77,6 +77,36 @@ Wireshark
    dapatkan ip nya dan kita lakukan analisis pada ip tersebut. Didapatkan ip nya adalah blablabla sedangkan hint pada soal ingin kita mensubstitusi angka menjadi huruf. Sedangkan ip tersebut ada yang terpecah 
    menjadi 3 digit sehingga kita perlu memecahnya lagi dan kita lakukan konversi. Dan akhirnya didapatkan lah flagnya berupa 6 huruf dari konversi ip.
 
+7. Berapa jumlah packet yang menuju IP 184.87.193.88? |
+   nc 10.21.78.111 6565 <br>
+   Solving : <br>
+   Masuk ke dalam packet capture. Karena soal menanyakan tentang jumlah packet yang menuju IP 184.87.193.88, maka kita dapat menerapkan filter "ip.dst == 184.87.193.88"
+   ![7 2](https://github.com/nabielvna/desktop-tutorial/assets/102472111/f8de0ce4-a8aa-40ca-858d-64211f4ff5a9)
+   
+   kemudian didapatkan jumlah packet yang menuju IP 184.87.193.88 sebanyak 6 packet
+   ![7 3](https://github.com/nabielvna/desktop-tutorial/assets/102472111/45449545-703d-4dcb-960f-521a34f173d6)
 
+8. Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80 (jika terdapat lebih dari 1 port maka urutkan sesuai abjad) |
+   nc 10.21.78.111 7171 <br>
+   Solving : <br>
+   Jawaban -> filter port -> "tcp.dstport == 80 || udp.dstport == 80"
+   ![8 1](https://github.com/nabielvna/desktop-tutorial/assets/102472111/332afc79-b8b1-4929-8fbd-236eabca5a5b)
+
+9. Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34! |
+   nc 10.21.78.111 7272 <br>
+   Solving : <br>
+   jawaban -> filter ip -> "ip.src == 10.51.40.1 && ip.dst != 10.39.55.34"
+   ![9 1](https://github.com/nabielvna/desktop-tutorial/assets/102472111/58764efb-c6ae-4cd8-80b5-504c093f1860)
+
+10. Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet, format [username]:[password]! |
+    nc 10.21.78.111 7373 <br>
+    Solving : <br>
+    a. Masuk kedalam packet capture. <br>
+    b. Soal menyebutkan aktivitas terjadi pada protokol Telnet. Maka terapkan filter dengan keyword "telnet". <br>
+    c. cari aktivitas yang terdapat [username]:[password] di dalamnya. <br>
+    ![10 1](https://github.com/nabielvna/desktop-tutorial/assets/102472111/d5e8d571-4f4d-4a1b-9894-80b676c9e30e)
+
+    Kemudian didapatkan [username]:[password], yaitu: "dhafin:kesayangannyak0k0"
+    ![10 2](https://github.com/nabielvna/desktop-tutorial/assets/102472111/e7819d74-5f20-484a-85e4-4d010456600c)
 
 
