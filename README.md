@@ -11,3 +11,8 @@ Pada wireshark lakukan filter dengan keyword "FTP" karena clue yang diberikan ol
 Lalu, pusatkan perhatian pada "STOR" yang terdapat pada info paket yang terekam karena diduga kuat itu merupakan aktivitas yang dimaksud.
 ![soal 1 FTP](https://github.com/yogs14/Jarkom-jarkoman/assets/121499055/b52564f0-f8d7-41de-ba41-d6e7f3c361c5)
 
+2. Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
+   nc 10.21.78.111 13579
+   Solving :
+   Masuk ke dalam packet capture dan karena soal menginginkan server maka ikuti protokol http dari file pcap tersebut karena server pasti menempel pada protokol http
+   ![Wireshark · Follow HTTP Stream (tcp stream eq 2) · Wi-Fi 9_18_2023 8_02_15 PM](https://github.com/yogs14/Jarkom-jarkoman/assets/121499055/371d18eb-049c-4d0d-9f79-bdcb26c31a95)
