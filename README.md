@@ -82,22 +82,21 @@ Wireshark
    Solving : <br>
    Masuk ke dalam packet capture. Karena soal menanyakan tentang jumlah packet yang menuju IP 184.87.193.88, maka kita dapat menerapkan filter "ip.dst == 184.87.193.88"
    ![7 2](https://github.com/yogs14/Jarkom-jarkoman/assets/102472111/6616db01-4bbd-480c-8d02-b1fc731c9086)
-
    
    kemudian didapatkan jumlah packet yang menuju IP 184.87.193.88 sebanyak 6 packet
-   ![7 3](https://github.com/nabielvna/desktop-tutorial/assets/102472111/45449545-703d-4dcb-960f-521a34f173d6)
+   ![7 3](https://github.com/yogs14/Jarkom-jarkoman/assets/102472111/e25d306d-b16b-4869-8c0d-27cf7c665623)
 
 8. Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80 (jika terdapat lebih dari 1 port maka urutkan sesuai abjad) |
    nc 10.21.78.111 7171 <br>
    Solving : <br>
    Jawaban -> filter port -> "tcp.dstport == 80 || udp.dstport == 80"
-   ![8 1](https://github.com/nabielvna/desktop-tutorial/assets/102472111/332afc79-b8b1-4929-8fbd-236eabca5a5b)
+   ![8 1](https://github.com/yogs14/Jarkom-jarkoman/assets/102472111/f08a4131-486d-4454-8727-86ea4d11a9d6)
 
 9. Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34! |
    nc 10.21.78.111 7272 <br>
    Solving : <br>
    jawaban -> filter ip -> "ip.src == 10.51.40.1 && ip.dst != 10.39.55.34"
-   ![9 1](https://github.com/nabielvna/desktop-tutorial/assets/102472111/58764efb-c6ae-4cd8-80b5-504c093f1860)
+   ![9 1](https://github.com/yogs14/Jarkom-jarkoman/assets/102472111/66b8a064-e602-44eb-a68c-51853045c713)
 
 10. Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet, format [username]:[password]! |
     nc 10.21.78.111 7373 <br>
@@ -105,9 +104,10 @@ Wireshark
     a. Masuk kedalam packet capture. <br>
     b. Soal menyebutkan aktivitas terjadi pada protokol Telnet. Maka terapkan filter dengan keyword "telnet". <br>
     c. cari aktivitas yang terdapat [username]:[password] di dalamnya. <br>
-    ![10 1](https://github.com/nabielvna/desktop-tutorial/assets/102472111/d5e8d571-4f4d-4a1b-9894-80b676c9e30e)
+    ![10 1](https://github.com/yogs14/Jarkom-jarkoman/assets/102472111/781e064d-df1f-4f49-88a3-f4f6bcbbc10b)
 
     Kemudian didapatkan [username]:[password], yaitu: "dhafin:kesayangannyak0k0"
-    ![10 2](https://github.com/nabielvna/desktop-tutorial/assets/102472111/e7819d74-5f20-484a-85e4-4d010456600c)
+    ![10 2](https://github.com/yogs14/Jarkom-jarkoman/assets/102472111/872939fb-72e4-4156-b74d-5a6823c23c7d)
+
 
 
