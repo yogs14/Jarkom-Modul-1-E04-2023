@@ -109,5 +109,9 @@ Wireshark
     Kemudian didapatkan [username]:[password], yaitu: "dhafin:kesayangannyak0k0"
     ![10 2](https://github.com/yogs14/Jarkom-jarkoman/assets/102472111/872939fb-72e4-4156-b74d-5a6823c23c7d)
 
-
+Adapun kedala yang dialami selama praktikum berlangsung diantaranya: 
+1. Ketidaktahuan soal manfaat soal fungsi "statistics" untuk menghitung jumlah paket sehingga penghitungan dilakukan secara manual ketika nomer paket tidak terurut
+2. Banyaknya jawaban yang "mirip" sehingga coba-coba cukup membuang waktu
+3. Seringnya netcat terkena timeout menyebabkan waktu terbuang
+4. Adanya netcat yang mengeluarkan "incorrect" padahal jawaban seharusnya sudah "benar"
 
