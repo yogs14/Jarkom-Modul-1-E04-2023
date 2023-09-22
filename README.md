@@ -1,6 +1,10 @@
 Lapres Praktikum Modul 1 
 Wireshark
 
+Nama Anggota:
+1. Yoga Firman Syahputra 5025221212
+2. Vidiawan Nabiel Arrasyid 5025221231
+
 1. User melakukan berbagai aktivitas dengan menggunakan protokol FTP.
    nc 10.21.78.111 12345
    Solving:
